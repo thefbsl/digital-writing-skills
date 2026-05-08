@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import { AcademicContributors } from "@/components/sections/academic-contributors";
 import { FadeInSection } from "@/components/sections/fade-in-section";
 import { TestimonialsSection } from "@/components/sections/testimonials-section";
 
@@ -27,7 +28,7 @@ export default function AboutPage() {
         </div>
       </FadeInSection>
 
-      <article className="mx-auto max-w-3xl space-y-12 px-4 py-16 sm:px-6 lg:px-8">
+      <article className="mx-auto flex max-w-3xl flex-col gap-10 px-4 pb-14 pt-16 sm:px-6 lg:gap-11 lg:px-8">
         <section>
           <h2 className="font-heading text-2xl font-semibold">
             Why digital tools matter for writing skills
@@ -77,6 +78,8 @@ export default function AboutPage() {
             replacing the writer’s voice.
           </p>
         </section>
+
+        <AcademicContributors />
       </article>
 
       <TestimonialsSection />
